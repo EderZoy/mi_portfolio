@@ -1,2 +1,2 @@
 # mi_portfolio
-En este proyecto desarrolle mi portfolio con HTML, CSS y JS. Podes ver el mismo desde el siguiente link: 
+En este proyecto desarrolle mi portfolio con HTML, CSS y JS. Podes ver el mismo desde el siguiente link: https://portfolio-zoyeder.netlify.app/
