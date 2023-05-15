@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Te permite usar icnocos, imagenes SVG, fuentes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio EZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <!--<li><a href="#contacto">CONTACTO</a></li>-->
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/mifoto.jpeg" alt="">
+            </div>
+            <h1>ZOY EDER</h1>
+            <H2>Estudiante de Ingenieria en Sistemas de Información</H2>
+            <H3>Cursando 5to Año</H3>
+            <div class="redes">
+                <a href="https://www.instagram.com/eder_zoy/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/eder-zoy/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/EderZoy"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCZD3ykIl82DjrbzkJYGO_Gg"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p> <span>Hola, soy Eder.</span> Soy una persona organizada y responsable, enfocado en adquirir habilidades y aprender nuevas herramientas que
+                aporten a mi crecimiento profesional, por lo que busco un
+                puesto en donde pueda sumar experiencias y
+                conocimientos en el área del desarrollo de software y el
+                analisis de sistemas.
+                </p>
+
+                <div class="fila">
+                    <!--Datos Personales-->
+                    <div class="columna">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Telefono:</strong>
+                                (0353) 425 2296
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                ederzoy6@gmail.com
+                            </li>
+                            <li>
+                                <strong>Dirección:</strong>
+                                Teniente Ibáñez 1265 - Villa Maria. 
+                            </li>
+                            <li>
+                                <strong>Fecha Nacimiento:</strong>
+                                25/06/2001
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Intereses-->
+                    <div class="columna">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-futbol"></i>
+                                <span>FUTBOL</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-music"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-mountain-sun"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-palette"></i>
+                                <span>CERAMICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-cookie-bite"></i>
+                                <span>COCINAR</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <span>APRENDER</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>DISEÑAR</span>
+                            </div>
+                            <div class="interes">
+            
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div> 
+                
+                <a href="/archivo/CV ZOY EDER (5_23).pdf" download="CV-ZOY-EDER"> 
+                <button>
+                    Descargar CV <i class="fa-solid fa-circle-down"></i>
+                    <span class="overlay"></span>
+                </button>
+                </a>    
+               
+        </div>
+    </section>
+
+    <!--SKILLS-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="columna">
+                    <h3>Technical Skills</h3>
+                    <div class="contenedor-skills">
+                        <div class="skill">
+                            <i class="fa-brands fa-java"></i>
+                            <span>JAVA</span>
+                            <p>Lenguaje</p>
+                            <p class="oculta">Nivel Alto</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                            <p>Lenguaje</p>
+                            <p class="oculta">Nivel Alto</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                            <p>Lenguaje</p>
+                            <p class="oculta">Nivel Alto</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JAVA SCRIPT</span>
+                            <p>Lenguaje</p>
+                            <p class="oculta">Nivel Bajo</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-python"></i>
+                            <span>PYTHON</span>
+                            <p>Lenguaje</p>
+                            <p class="oculta">Nivel Bajo</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>Spring</span>
+                            <p>Framework</s¿>
+                            <p class="oculta">Nivel Bajo</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-d"></i>
+                            <span>Django</span>
+                            <p>Framework</p>
+                            <p class="oculta">Nivel Bajo</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-database"></i>
+                            <span>PostgreSQL</span>
+                            <p>Motor BD</p>
+                            <p class="oculta">Nivel Medio</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                            <p>Motor BD</p>
+                            <p class="oculta">Nivel Alto</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-git"></i>
+                            <span>Git & GitHub</span>
+                            <p>Versionamiento</p>
+                            <p class="oculta">Nivel Medio</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional Skills-->
+                <div class="columna">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>Trabajo en equipo.</li>
+                        <li>Capacidad de aprendizaje.</li>
+                        <li>Creatividad.</li>
+                        <li>Adaptación a cambios.</li>
+                        <li>Uso de Tecnologias de Información.</li>
+                        <li>Organización y Planificación.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="columna izq">
+                    <h3>Educación</h3>
+                    <div class="item izquierda">
+                        <h4>Ingenieria en Sistemas de Información</h4>
+                        <span class="casa">UTN - FRVM</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <p>Cursando 5to año de la carrera con un promedio general de: 9.08</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izquierda">
+                        <h4>Bachillerato en economía y administración</h4>
+                        <span class="casa">IPEM 172 "Jose Hernandez"</span>
+                        <span class="fecha">2013 - 2018</span>
+                        <p>Finalizado con un promedio general de: 8.73</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columna der">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item derecha">
+                        <h4>Departamento de Informática</h4>
+                        <span class="casa">Poder Judicial Villa Maria</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Resolviendo problemas técnicos, mantenimiento de
+                                edes de información y equipos informáticos junto al
+                                respaldo de datos.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item derecha">
+                        <h4>Community Manager - Alditech</h4>
+                        <span class="casa">Alditech</span>
+                        <span class="fecha">2018 - 2019</span>
+                         <p>Gestionando y administrando la comunidad en línea
+                                de la empresa, publicando fotos y manteniendo el
+                                contacto con los clientes.</p>
+                        <div class="conectord">
+                             <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PROYECTOS-->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <h3>Estos son algunos de los proyectos personales que realice</h3>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/img/pagina-town.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Town Store</h3>
+                        <p>Desarrollo en HTML & CSS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/blog-cafe.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Blog</h3>
+                        <p>Desarrollo en HTML,CSS & JS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/tienda.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Tienda</h3>
+                        <p>Desarrollo en HTML & CSS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/quiz1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Juego Quizz</h3>
+                        <p>Desarrollo en JS</p>
+                    </div>
+                </div>
+                <!--
+                <div class="proyecto">
+                    <img src="/img/quiz2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Juego Quizz</h3>
+                        <p>Desarrollo en JS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/quiz3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Juego Quizz</h3>
+                        <p>Desarrollo en JS</p>
+                    </div>
+                </div>-->
+                <div class="proyecto">
+                    <img src="/img/concesionaria.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Venta de autos - Concesionaria</h3>
+                        <p>Desarrollo en Java</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/argprog.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tutoria Java</h3>
+                        <p>Tutor de TPI en el curso Argentina Programa 4.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTO
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+               
+                <div class="columna">
+
+                </div>
+            </div>
+        </div> 
+    </section>-->
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/eder_zoy/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/eder-zoy/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/EderZoy"><i class="fa-brands fa-github"></i></a>
+             <a href="https://www.youtube.com/channel/UCZD3ykIl82DjrbzkJYGO_Gg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!--Relacion con el archivo JS-->
+    <script src="script.js"></script>
+</body>
+</html>
